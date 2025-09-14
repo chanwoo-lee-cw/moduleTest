@@ -1,0 +1,17 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+
+logging:
+  level:
+    com.bs: DEBUG
+    org:
+      hibernate:
+        SQL: DEBUG
+        orm:
+          jdbc:
+            bind: TRACE
+      springframework:
+        transaction:
+          interceptor: trace
