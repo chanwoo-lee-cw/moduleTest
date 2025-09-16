@@ -10,6 +10,9 @@ description = "api"
 dependencies {
     implementation(project(":domain"))
     implementation("org.springframework.boot:spring-boot-starter-web")
+
+    // db
+    runtimeOnly("com.mysql:mysql-connector-j:9.0.0")
 }
 
 tasks.register("prepareKotlinBuildScriptModel") {}

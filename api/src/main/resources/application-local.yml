@@ -3,6 +3,12 @@ spring:
     activate:
       on-profile: local
 
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/kakaopay
+    username: root
+    password: 1241
+
 logging:
   level:
     com.bs: DEBUG
