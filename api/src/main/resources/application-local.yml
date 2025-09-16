@@ -5,7 +5,7 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/kakaopay
+    url: jdbc:mysql://localhost:3306/demo
     username: root
     password: 1241
 
