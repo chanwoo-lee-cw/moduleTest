@@ -1,7 +1,7 @@
-package com.example.api.order.controller
+package com.example.api.controller.order
 
-import com.example.api.order.application.OrderApplication
-import com.example.api.order.model.OrderDetailResponse
+import com.example.api.application.order.OrderApplication
+import com.example.api.model.order.OrderDetailResponse
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable

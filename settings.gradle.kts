@@ -3,4 +3,4 @@
 //include("api", "domain")
 
 rootProject.name = "moduleTest"
-include("api", "domain")
+include("api", "domain", "common")

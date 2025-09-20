@@ -1,4 +1,4 @@
-package com.example.api.order.model
+package com.example.api.model.order
 
 import com.example.domain.dto.order.OrderDto
 import java.time.Instant

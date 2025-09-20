@@ -1,6 +1,6 @@
-package com.example.api.order.application
+package com.example.api.application.order
 
-import com.example.api.order.model.OrderDetailResponse
+import com.example.api.model.order.OrderDetailResponse
 import com.example.domain.service.OrderService
 import org.springframework.stereotype.Service
 
@@ -10,7 +10,7 @@ class OrderApplication(
 ) {
 
     fun findDetails(orderId: Long) =
-        OrderDetailResponse.from(
+        OrderDetailResponse.Companion.from(
             orderService.getEntityById(orderId)
         )
 }

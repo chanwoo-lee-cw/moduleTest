@@ -11,9 +11,13 @@ val queryDslVersion = "5.1.0"
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 
+    // JPA
     implementation("com.querydsl:querydsl-jpa:${queryDslVersion}:jakarta")
     implementation("com.querydsl:querydsl-core:${queryDslVersion}")
     kapt("com.querydsl:querydsl-apt:${queryDslVersion}:jakarta")
+
+    // lombok
+    implementation("org.projectlombok:lombok")
 }
 
 tasks.register("prepareKotlinBuildScriptModel") {}
