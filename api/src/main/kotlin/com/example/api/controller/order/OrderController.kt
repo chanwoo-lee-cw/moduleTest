@@ -2,7 +2,7 @@ package com.example.api.controller.order
 
 import com.example.api.application.order.OrderApplication
 import com.example.api.model.order.OrderDetailResponse
-import org.springframework.http.ResponseEntity
+import com.example.common.response.ApiResponse
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping
@@ -17,8 +17,8 @@ class OrderController(
     @GetMapping("/{id}")
     fun findDetails(
         @PathVariable id: Long
-    ): ResponseEntity<OrderDetailResponse> =
-        ResponseEntity.ok(
+    ): ApiResponse<OrderDetailResponse> =
+        ApiResponse.success(
             orderApplication.findDetails(id)
         )
 }

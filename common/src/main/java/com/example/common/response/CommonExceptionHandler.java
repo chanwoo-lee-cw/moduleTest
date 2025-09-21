@@ -27,6 +27,7 @@ public class CommonExceptionHandler {
         return  ResponseEntity.of(problemDetail).build();
     }
 
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ProblemDetail> exceptionHandlerMethod(
             Exception exception
